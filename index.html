@@ -1,21 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Web</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #333; color: white; text-align: center; padding: 1em; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    main { padding: 1em; }
+    .foto { width: 200px; border-radius: 8px; }
+  </style>
 </head>
 <body>
-  <header><h1>Mi Sitio Web</h1></header>
+  <header>
+    <h1 id="inicio">Mi Sitio Web</h1>
+    <nav>
+      <a href="#texto">Texto</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#video">Video</a>
+    </nav>
+  </header>
+
   <main>
+    <section id="texto" class="contenido">
+      <h2>Sobre mí</h2>
+      <p>Bienvenido a mi página web con multimedia y diseño completo.</p>
+      <img src="https://via.placeholder.com/200" alt="Foto de ejemplo" class="foto">
+    </section>
+
     <section id="mapa">
       <h2>Ubicación</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="400" height="300" allowfullscreen="" loading="lazy"></iframe>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019104060963!2d-122.41941568468162!3d37.7749292797585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808d0f4a38a3%3A0x4a6e8e0fcd9!2sSan+Francisco%2C+CA!5e0!3m2!1ses!2sus!4v1700000000000" 
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <section id="video">
-      <h2>Video</h2>
-      <iframe width="400" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <h2>Video destacado</h2>
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              title="YouTube video" frameborder="0" allowfullscreen target="_blank"></iframe>
     </section>
   </main>
-  <footer><p>© 2025 Mi Web</p></footer>
+
+  <footer>
+    <p>© 2025 Mi Web. <a href="https://github.com/tu_usuario/mi_web" target="_blank">Repositorio GitHub</a></p>
+  </footer>
 </body>
 </html>
